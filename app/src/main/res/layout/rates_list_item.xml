@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:background="@color/black_tab_transparent"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:transitionName="title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text="Distance"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@id/sell"
+        android:layout_toLeftOf="@id/sell"
+        android:text="Buy"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Sell"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>
